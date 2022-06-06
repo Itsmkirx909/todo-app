@@ -16,15 +16,18 @@ dd.appendChild(el).appendChild(val)
 
 
 var delBtn = document.createElement("button");
-delBtn.innerHTML = "DEL";
+delBtn.innerHTML = "Delete";
+delBtn.className = 'btn-danger px-2'
 delBtn.setAttribute('onclick','del(this)')
 el.appendChild(delBtn);
 
 
 var editBtn = document.createElement("button");
-editBtn.innerHTML = "EDIT";
+editBtn.innerHTML = "Edit";
+editBtn.className = 'btn-success px-2'
 editBtn.setAttribute('onclick','edit(this)')
 el.appendChild(editBtn)
+editBtn.className = 'btn-success px-2'
 
 taskCount.innerHTML = dd.childElementCount
 
@@ -52,8 +55,10 @@ var br = document.createElement('br')
 var saveInp = document.createElement('input')
 var saveBtn = document.createElement('button')
 
+
 saveBtn.innerHTML = 'Save'
 saveBtn.setAttribute('onclick','save(this)')
+saveBtn.className = 'btn-primary px-2'
 
 par.appendChild(br)
 par.appendChild(saveInp)
